@@ -8,8 +8,12 @@ class Api::DataController < ApplicationController
 
     end 
 
+    def create_sherries
+
+    end 
+
     def create_comment
-        
+
     end 
 
 end 

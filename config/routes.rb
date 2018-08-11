@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace 'api' do 
     get '/sherries' => 'data#index'
     get '/sherries/:id' => 'data#show'
+    post '/sherries' => 'data#create_sherries'
     post '/sherries/:id/comments' => 'data#create_comment'
   end 
 end
