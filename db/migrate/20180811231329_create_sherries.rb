@@ -1,6 +1,6 @@
-class CreateSherriesTable < ActiveRecord::Migration[5.2]
+class CreateSherries < ActiveRecord::Migration[5.2]
   def change
-    create_table :sherries_tables do |t|
+    create_table :sherries do |t|
       t.integer :lcbo
       t.text :name
       t.integer :price
