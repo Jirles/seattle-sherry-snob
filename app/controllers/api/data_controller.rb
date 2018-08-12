@@ -11,7 +11,7 @@ class Api::DataController < ApplicationController
     end 
 
     def create_sherries
-        Sherry.create_or_find_from_json(params[:data][:results]) # probably not right
+        Sherry.create_or_find_from_json(params[:body][:results]) # probably not right
         redirect_to api_sherries_path
     end 
 

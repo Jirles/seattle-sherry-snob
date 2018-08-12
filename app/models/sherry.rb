@@ -5,19 +5,21 @@ class Sherry < ActiveRecord::Base
         price.to_f / 100
     end 
 
-    def self.create_sherries_from_json(json)
+    def self.create_or_find_from_json(json)
         json.each do |result|
-            sherry = self.new do |s|
-                s.lcbo_id = result.id
-                s.name = result.name
-                s.price = convert_price(result.price_in_cents)
-                s.origin = result.origin
-                s.package = result.package 
-                s.sugar_content = result.sugar_content 
-                s.producer = result.producer_name
-                s.tasting_note = result.tasting_note
+            unless Sherry.find_by(lcbo_id: result.id)
+                sherry = self.new do |s|
+                    s.lcbo_id = result.id
+                    s.name = result.name
+                    s.price = convert_price(result.price_in_cents)
+                    s.origin = result.origin
+                    s.package = result.package 
+                    s.sugar_content = result.sugar_content 
+                    s.producer = result.producer_name
+                    s.tasting_note = result.tasting_note
+                end 
+                sherry.save
             end 
-            sherry.save
         end 
     end 
 
