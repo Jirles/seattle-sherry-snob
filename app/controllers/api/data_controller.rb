@@ -10,6 +10,10 @@ class Api::DataController < ApplicationController
         render json: @sherry, status: 200
     end 
 
+    def default_image
+        send_file 'public/images/default-image.jpg', type: 'image/png', disposition: 'inline'
+    end
+
     def create_sherries
         Sherry.create_or_find_from_json(params[:body][:results]) # probably not right
         redirect_to api_sherries_path
