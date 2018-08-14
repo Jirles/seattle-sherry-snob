@@ -1,6 +1,9 @@
 class Sherry < ActiveRecord::Base
     has_many :comments
 
+    DEFAULT_IMAGE = '../../public/images/default-image.jpg'
+    DEFAULT_THUMBNAIL = '../../public/images/default-thumbnail.jpeg'
+
     def convert_price(price)
         price.to_f / 100
     end 
@@ -17,6 +20,8 @@ class Sherry < ActiveRecord::Base
                     s.sugar_content = result.sugar_content 
                     s.producer = result.producer_name
                     s.tasting_note = result.tasting_note
+                    s.image_url = DEFAULT_IMAGE unless result.image_url
+                    s.thumbnail_url = DEFAULT_THUMBNAIL unless result.image_thumb_url
                 end 
                 sherry.save
             end 
