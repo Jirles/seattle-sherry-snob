@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {SherryList} from '../components/SherryList';
+import {SherryList} from './SherryList';
 import {NavBar} from '../components/NavBar';
 import {AboutPage} from '../components/AboutPage';
 import {BrowserRouter as Router,
