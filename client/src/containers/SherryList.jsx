@@ -1,21 +1,35 @@
 import React from 'react';
-import {Link} from 'react-router-dom'; //eventually going to link to show pages
+import {SherryCard} from '../components/SherryCard';
 
+class SherryList extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          sherries: []
+        }
+      }
+    
+    componentDidMount(){
+    fetch('/api/sherries')
+        .then(resp => resp.json())
+        .then(json => this.setState({sherries: json}))
+        .catch(err => console.log('An error occurred: ', err))
+    }
 
-export const SherryList = (props) => {
-     const renderSherries = props.route.sherries.map(sherry => {
-         <div>
-             <Link to={`sherries/${sherry.id}`}><img src={sherry.thumbnail_url} alt='A sherry bottle' /></Link>
-             <h3>{sherry.name}</h3>
-             <span><em>{sherry.price}</em></span>
-             <p>{sherry.sugar_content}</p>
-         </div>
-     })
-    return (
-        <div>
-            <h1>Sherry, the civilized drink.</h1>
-            <small><em>- W. Somerset Maugham</em></small>
-            {renderSherries}
-        </div>
-    )
+    renderSherries = () => {
+        return this.state.sherries.map(sherry => <SherryCard key={sherry.id} sherry={sherry} />)
+    }
+
+    render(){
+        return (
+            <div>
+                <h1>Sherry, the civilized drink.</h1>
+                <small><em>- W. Somerset Maugham</em></small>
+                {this.renderSherries()}
+                
+            </div>
+        )
+    }
 }
+
+export default SherryList;
