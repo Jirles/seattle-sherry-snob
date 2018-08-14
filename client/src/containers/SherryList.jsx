@@ -1,19 +1,11 @@
 import React from 'react';
 import {SherryCard} from '../components/SherryCard';
+import { connect } from 'react-redux';
 
 class SherryList extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          sherries: []
-        }
-      }
     
     componentDidMount(){
-    fetch('/api/sherries')
-        .then(resp => resp.json())
-        .then(json => this.setState({sherries: json}))
-        .catch(err => console.log('An error occurred: ', err))
+    
     }
 
     renderSherries = () => {
@@ -32,4 +24,16 @@ class SherryList extends React.Component {
     }
 }
 
-export default SherryList;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        fetchSherriesFromAPI: () => dispatch({type: 'FETCH_SHERRIES'})
+    }
+}
+
+const mapStateToProps = (state) => {
+    return {
+        sherries: state.sherries
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SherryList);
