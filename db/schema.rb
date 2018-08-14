@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_12_005817) do
+ActiveRecord::Schema.define(version: 2018_08_14_143417) do
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 2018_08_12_005817) do
     t.text "sugar_content"
     t.text "producer"
     t.text "tasting_note"
+    t.text "image_url"
+    t.text "thumbnail_url"
   end
 
 end
