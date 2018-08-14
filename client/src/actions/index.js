@@ -3,10 +3,10 @@
 // sherries are listed under json.results 
 // but we may use rake to get outside API so no matter
 export const fetchSherries = () => {
-    const sherries = fetch('/api/sherries')
-        .then(resp => resp.json())
-    return {
-        type: 'FETCH_SHERRIES',
-        sherries
+    return (dispatch) => {
+        dispatch({type: 'LOADING_SHERRY'});
+        return fetch('/api/sherries')
+                .then(resp => resp.json())
+                .then(sherries => dispatch({ type: 'FETCH_SHERRIES', sherries }))
     }
 }
