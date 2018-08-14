@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_14_143417) do
+ActiveRecord::Schema.define(version: 2018_08_14_200638) do
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2018_08_14_143417) do
   create_table "sherries", force: :cascade do |t|
     t.integer "lcbo_id"
     t.text "name"
-    t.integer "price"
+    t.float "price"
     t.text "origin"
     t.text "package"
     t.text "sugar_content"
