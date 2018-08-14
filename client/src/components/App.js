@@ -7,14 +7,13 @@ import {BrowserRouter as Router,
 import SherryShow from '../containers/SherryShow';
 
 
-export const App = (props) => {
+export const App = () => {
 
   return (
     <Router>
       <div>
           <NavBar />
-          This is the App Component
-        
+          
           <Route exact path='/' component={SherryList} />
           <Route path='/about' component={AboutPage} />
           <Route path='/sherries/:sherryId' component={SherryShow}/>
