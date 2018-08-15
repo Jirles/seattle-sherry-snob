@@ -4,12 +4,13 @@ import {connect} from 'react-redux';
 
 class SherryShow extends React.Component {
     render(){
+        const { sherry } = this.props;
         return(
             <div>
-                <h3>{this.props.sherry.name}</h3>
-                <img src={this.props.sherry.thumbnail_url} alt='A sherry bottle' width='420' height='320' />
+                <h3>{sherry.name}</h3>
+                <img src={sherry.thumbnail_url} alt='A sherry bottle' width='420' height='320' />
                     
-                <h4><em>{this.props.sherry.tasting_note}</em></h4>
+                <h4><em>{sherry.tasting_note}</em></h4>
                 <table>
                     <tbody>
                         <tr>
@@ -17,7 +18,7 @@ class SherryShow extends React.Component {
                                 Producer
                             </th>
                             <td>
-                                {this.props.sherry.producer}
+                                {sherry.producer}
                             </td>
                         </tr>
                         <tr>
@@ -25,7 +26,7 @@ class SherryShow extends React.Component {
                                 Region of origin
                             </th>
                             <td>
-                                {this.props.sherry.origin}
+                                {sherry.origin}
                             </td>
                         </tr>
                         <tr>
@@ -33,7 +34,7 @@ class SherryShow extends React.Component {
                                 Sugar content
                             </th>
                             <td>
-                                {this.props.sherry.sugar_content}
+                                {sherry.sugar_content}
                             </td>
                         </tr>
                         <tr>
@@ -41,13 +42,13 @@ class SherryShow extends React.Component {
                                 Price USD
                             </th>
                             <td>
-                                {this.props.sherry.price}
+                                {sherry.price}
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <hr />
-                <CommentSection />
+                <CommentSection comments={sherry.comments}/>
             </div>
         )
     }
