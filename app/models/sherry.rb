@@ -1,7 +1,7 @@
 class Sherry < ActiveRecord::Base
     has_many :comments
 
-    DEFAULT_IMAGE = '/api/default-image'
+    DEFAULT_IMAGE = 'http://localhost:3001/api/default-image'
 
     def convert_price(price)
         price.to_f / 100

@@ -12,8 +12,16 @@ export const addComment = (comment) => {
     return (dispatch) => {
         dispatch({type: 'POSTING_COMMENT'});
         return fetch('http://localhost:3001/api/comments', 
-                    {method: 'POST', body: JSON.stringify(comment)})
+                    {headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                      },
+                     method: 'POST', 
+                     mode: 'cors',
+                     body: JSON.stringify(comment)}
+                    )
                 .then(resp => resp.json())
                 .then(comment => dispatch({ type: 'ADD_COMMENT', comment }))
+                .catch(err => console.log(err))
     }
 }

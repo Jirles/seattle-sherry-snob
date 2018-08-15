@@ -1,4 +1,5 @@
 class Api::DataController < ApplicationController
+    require 'byebug'
 
     def index 
         @sherries ||= Sherry.all
@@ -25,8 +26,8 @@ class Api::DataController < ApplicationController
 
     private 
 
-    def comment_params(params)
-        params.require(:comment).permit(:sherry_id, :content)
+    def comment_params
+        params.require(:datum).permit(:sherry_id, :content)
     end 
 
 end 

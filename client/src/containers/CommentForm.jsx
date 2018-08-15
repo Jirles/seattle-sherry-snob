@@ -6,7 +6,6 @@ class CommentForm extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            sherry_id: this.props.sherry_id,
             content: ''
         }
     }
@@ -19,7 +18,7 @@ class CommentForm extends React.Component {
 
     handleOnSubmit = (e) => {
         e.preventDefault();
-        this.props.addComment(this.state);
+        this.props.addComment({sherry_id: this.props.sherry_id, content: this.state.content});
         this.setState({
             content: ''
         });
