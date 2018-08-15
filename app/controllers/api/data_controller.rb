@@ -26,7 +26,7 @@ class Api::DataController < ApplicationController
     private 
 
     def comment_params(params)
-        params.permit(:wine_id, :content)
+        params.permit(:sherry_id, :content)
     end 
 
 end 

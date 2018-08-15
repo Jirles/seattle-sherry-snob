@@ -48,7 +48,7 @@ class SherryShow extends React.Component {
                     </tbody>
                 </table>
                 <hr />
-                <CommentSection comments={sherry.comments}/>
+                <CommentSection comments={sherry.comments} sherry_id={sherry.id}/>
             </div>
         )
     }

@@ -12,8 +12,7 @@ export const CommentSection = (props) => {
     
     return (
         <div>
-            This is the comment section
-            <CommentForm />
+            <CommentForm sherry_id={props.sherry_id}/>
             {renderComments}
         </div>
     )   
