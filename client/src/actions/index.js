@@ -25,3 +25,10 @@ export const addComment = (comment) => {
                 .catch(err => console.log(err))
     }
 }
+
+export const filterSherryResults = (filters) => {
+    return (dispatch) => {
+        return dispatch({type: 'FILTER_SHERRY_RESULTS', filters});
+    }
+    
+}
