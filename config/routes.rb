@@ -5,6 +5,6 @@ Rails.application.routes.draw do
     get '/sherries/:id' => 'data#show'
     get '/default-image' => 'data#default_image'
     post '/sherries' => 'data#create_sherries'
-    post '/sherries/:id/comments' => 'data#create_comment'
+    post '/comments' => 'data#create_comment'
   end 
 end

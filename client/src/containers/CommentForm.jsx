@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {addComment} from '../actions';
+import { addComment } from '../actions';
 
 class CommentForm extends React.Component {
     constructor(props){
@@ -19,7 +19,7 @@ class CommentForm extends React.Component {
 
     handleOnSubmit = (e) => {
         e.preventDefault();
-        addComment(this.state);
+        this.props.addComment(this.state);
         this.setState({
             content: ''
         });
