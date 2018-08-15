@@ -54,7 +54,9 @@ class SherryShow extends React.Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-    const sherry = state.sherries.find(sherry => sherry.id === parseInt(ownProps.match.params.sherryId, 10));
+    
+    const sherry = state.sherries.find(sherry => sherry.id === parseInt(ownProps.match.params.sherryId, 10))
+    
     if (sherry){
         return { sherry };
     } else {

@@ -13,7 +13,7 @@ export const App = () => {
     <Router>
       <div>
           <NavBar />
-          
+
           <Route exact path='/' component={SherryList} />
           <Route path='/about' component={AboutPage} />
           <Route path='/sherries/:sherryId' component={SherryShow}/>
