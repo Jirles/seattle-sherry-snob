@@ -18,7 +18,3 @@ export const CommentSection = (props) => {
         </div>
     )   
 }
-
-// this breaks the application when forced to refresh because it is not hooked up to the store and loses 
-// the state on each refresh
-// google about maintaining state with each refresh becuase it's killing me

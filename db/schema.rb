@@ -10,11 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_14_200638) do
+ActiveRecord::Schema.define(version: 2018_08_15_134141) do
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
     t.integer "sherry_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "sherries", force: :cascade do |t|
@@ -28,6 +30,8 @@ ActiveRecord::Schema.define(version: 2018_08_14_200638) do
     t.text "tasting_note"
     t.text "image_url"
     t.text "thumbnail_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
