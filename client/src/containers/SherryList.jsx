@@ -1,13 +1,8 @@
 import React from 'react';
 import {SherryCard} from '../components/SherryCard';
 import { connect } from 'react-redux';
-import { fetchSherries } from '../actions';
 
 class SherryList extends React.Component {
-    
-    componentDidMount(){
-        this.props.fetchSherriesFromAPI();
-    }
 
     renderSherries = () => {
         return this.props.sherries.map(sherry => <SherryCard key={sherry.id} sherry={sherry} />)
@@ -17,24 +12,17 @@ class SherryList extends React.Component {
         return (
             <div>
                 <h1>Sherry, the civilized drink.</h1>
-                <small><em>- W. Somerset Maugham</em></small>
+                <small><em> - W. Somerset Maugham</em></small>
                 {this.renderSherries()}
-                
             </div>
         )
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        fetchSherriesFromAPI: () => dispatch(fetchSherries())
-    }
-}
-
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
     return {
         sherries: state.sherries
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SherryList);
+export default connect(mapStateToProps)(SherryList);

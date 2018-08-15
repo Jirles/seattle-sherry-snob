@@ -1,10 +1,11 @@
 import React from 'react';
-import SherryList from '../containers/SherryList';
+//import SherryList from '../containers/SherryList';
 import {NavBar} from './NavBar';
 import {AboutPage} from './AboutPage';
 import {BrowserRouter as Router,
         Route} from 'react-router-dom';
-import SherryShow from '../containers/SherryShow';
+//import SherryShow from '../containers/SherryShow';
+import SherryPage from '../containers/SherryPage';
 
 
 export const App = () => {
@@ -14,9 +15,9 @@ export const App = () => {
       <div>
           <NavBar />
 
-          <Route exact path='/' component={SherryList} />
+          <Route path='/' component={SherryPage} />
           <Route path='/about' component={AboutPage} />
-          <Route path='/sherries/:sherryId' component={SherryShow}/>
+          <Route /*path='/sherries/:sherryId' component={SherryShow} */ />
       </div>
     </Router>
   );
