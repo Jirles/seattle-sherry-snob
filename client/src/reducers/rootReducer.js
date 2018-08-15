@@ -5,8 +5,8 @@ export function rootReducer(state = {sherries: []}, action){
         case 'FETCH_SHERRIES':
             return { sherries: action.sherries }
         case 'ADD_COMMENT':
-            const sherry = state.sherries.filter(sherry => sherry.id === action.comment.sherry_id);
-            sherry.comments = [...sherry.comments, action.comment]
+            const sherry = state.sherries.find(sherry => sherry.id === action.comment.sherry_id);
+            sherry.comments = [action.comment, ...sherry.comments];
             return { sherries: [...state.sherries, sherry] }
         default:
             return state;
