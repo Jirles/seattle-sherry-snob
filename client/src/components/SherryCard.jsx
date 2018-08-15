@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'; //eventually going to link to show pages
+import {Link} from 'react-router-dom';
 
 export const SherryCard = (props) => {
     return(
