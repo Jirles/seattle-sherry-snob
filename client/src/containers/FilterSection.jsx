@@ -1,8 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import {filterSherryResults} from '../actions';
 
-class FilterSection extends React.Component {
+export default class FilterSection extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -10,23 +8,6 @@ class FilterSection extends React.Component {
             maxPrice: '',
             sweetnessFilter: 'Both'
         }
-    }
-
-    handleOnSubmit = (e) => {
-        e.preventDefault();
-        debugger
-        const minPrice = this.state.minPrice === '' ? 0 : parseFloat(this.state.minPrice);
-        const maxPrice = this.state.maxPrice === '' ? Infinity : parseFloat(this.state.maxPrice); 
-        this.props.filterSherryResults({
-            minPrice: minPrice,
-            maxPrice: maxPrice,
-            sweetnessFilter: this.state.sweetnessFilter
-        });
-        this.setState({
-            minPrice: '',
-            maxPrice: '',
-            sweetnessFilter: 'Both'
-        });
     }
 
     handleChange = (e) => {
@@ -57,5 +38,3 @@ class FilterSection extends React.Component {
         )
     }
 }
-
-export default connect(null, { filterSherryResults })(FilterSection);
