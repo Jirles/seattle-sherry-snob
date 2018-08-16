@@ -7,19 +7,20 @@ class SherryList extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            filters: false,
             minPrice: 0,
             maxPrice: Infinity,
             sweetnessFilter: 'Both'
         }
     }
 
-    renderSherries = () => {
-        return this.props.sherries.map(sherry => <SherryCard key={sherry.id} sherry={sherry} />)
+    renderSherries = (sherries) => {
+        return sherries.map(sherry => <SherryCard key={sherry.id} sherry={sherry} />)
     }
 
     filteredList = () => {
-        if (this.state.filters){
+        if (this.state.minPrice === 0 && this.state.maxPrice === Infinity && this.state.sweetnessFilter === 'Both'){
+            return this.props.sherries
+        } else {
             const filteredByPrice = this.props.sherries.filter(sherry => this.state.minPrice <= sherry.price && this.state.maxPrice >= sherry.price);
             const filteredByPriceAndSweetness = filteredByPrice.filter(sherry => {
                 if (this.state.sweetnessFilter === 'Both'){
@@ -28,22 +29,24 @@ class SherryList extends React.Component {
                     return sherry.sugar_content.includes(this.state.sweetnessFilter);
                 }
             });
-            return { sherries: filteredByPriceAndSweetness };
-        } else {
-            return this.props.sherries
-        }
+            return filteredByPriceAndSweetness;
+       }
     }
 
-    handleOnSubmit = (e, filters) => {
-        e.preventDefault();
-        console.log(filters);
-        const minPrice = filters.minPrice === '' ? 0 : parseFloat(filters.minPrice);
-        const maxPrice = filters.maxPrice === '' ? Infinity : parseFloat(filters.maxPrice); 
+    handleChange = (e) => {
         this.setState({
-            filters: true,
+            [e.target.name]: e.target.value
+        });
+    }
+
+    handleOnSubmit = (e) => {
+        e.preventDefault();
+        const minPrice = this.state.minPrice === '' ? 0 : parseFloat(this.state.minPrice);
+        const maxPrice = this.state.maxPrice === '' ? Infinity : parseFloat(this.state.maxPrice);
+        console.log({minPrice, maxPrice, sweetnessFilter: this.state.sweetnessFilter});
+        this.setState({
             minPrice: minPrice,
-            maxPrice: maxPrice,
-            sweetnessFilter: filters.sweetnessFilter
+            maxPrice: maxPrice
         });
     }
 
@@ -52,9 +55,9 @@ class SherryList extends React.Component {
             <div>
                 <h1>Seattle Sherry Snob</h1>
                 
-                <FilterSection handleOnSubmit={this.handleOnSubmit} />
+                <FilterSection handleOnSubmit={this.handleOnSubmit} handleChange={this.handleChange} />
                 <br />
-                {this.renderSherries()}
+                {this.renderSherries(this.filteredList())}
             </div>
         )
     }
