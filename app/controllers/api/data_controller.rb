@@ -16,7 +16,7 @@ class Api::DataController < ApplicationController
     end
 
     def create_sherries
-        Sherry.create_or_find_from_json(params[:body][:results]) # probably not right
+        Sherry.create_or_find_from_json(sherry_params)
     end 
 
     def create_comment
@@ -28,6 +28,10 @@ class Api::DataController < ApplicationController
 
     def comment_params
         params.require(:datum).permit(:sherry_id, :content)
+    end 
+
+    def sherry_params
+        params.permit(result: [:id, :name, :price_in_cents, :origin, :package, :sugar_content, :producer_name, :tasting_note, :image_url, :image_thumb_url])
     end 
 
 end 

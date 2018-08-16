@@ -8,7 +8,7 @@ class Sherry < ActiveRecord::Base
     end 
 
     def self.create_or_find_from_json(json)
-        json.each do |result|
+        json.result.each do |result|
             unless Sherry.find_by(lcbo_id: result.id)
                 sherry = self.new do |s|
                     s.lcbo_id = result.id
