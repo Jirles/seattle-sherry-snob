@@ -14,12 +14,18 @@ class FilterSection extends React.Component {
 
     handleOnSubmit = (e) => {
         e.preventDefault();
+        debugger
         const minPrice = this.state.minPrice === '' ? 0 : parseFloat(this.state.minPrice);
         const maxPrice = this.state.maxPrice === '' ? Infinity : parseFloat(this.state.maxPrice); 
         this.props.filterSherryResults({
             minPrice: minPrice,
             maxPrice: maxPrice,
             sweetnessFilter: this.state.sweetnessFilter
+        });
+        this.setState({
+            minPrice: '',
+            maxPrice: '',
+            sweetnessFilter: 'Both'
         });
     }
 
