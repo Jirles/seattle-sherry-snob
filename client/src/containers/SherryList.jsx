@@ -1,7 +1,7 @@
 import React from 'react';
 import {SherryCard} from '../components/SherryCard';
 import { connect } from 'react-redux';
-import {FilterSection} from './FilterSection';
+import FilterSection from './FilterSection';
 
 class SherryList extends React.Component {
 
@@ -12,8 +12,8 @@ class SherryList extends React.Component {
     render(){
         return (
             <div>
-                <h1>Sherry, the civilized drink. <small><em> - W. Somerset Maugham</em></small></h1>
-                <br />
+                <h1>Sherry, the civilized drink.</h1>
+                <blockquote><em> - W. Somerset Maugham</em></blockquote>
                 <FilterSection />
                 <br />
                 {this.renderSherries()}

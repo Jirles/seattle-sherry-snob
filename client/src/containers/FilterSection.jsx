@@ -1,7 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import {filterSherryResults} from '../actions';
 
-export default class FilterSection extends React.Component {
+class FilterSection extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -13,7 +14,7 @@ export default class FilterSection extends React.Component {
 
     handleOnSubmit = (e) => {
         e.preventDefault();
-        filterSherryResults(this.state);
+        this.props.filterSherryResults(this.state);
     }
 
     handleChange = (e) => {
@@ -44,3 +45,5 @@ export default class FilterSection extends React.Component {
         )
     }
 }
+
+export default connect(null, { filterSherryResults })(FilterSection);
