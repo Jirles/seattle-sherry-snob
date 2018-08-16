@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {filterSherryResults} from '../actions';
+import { filterSherryResults, fetchSherries } from '../actions';
 
 class FilterSection extends React.Component {
     constructor(props){
@@ -46,10 +46,11 @@ class FilterSection extends React.Component {
                     <input type='radio' name='sweetnessFilter' id='both' value='Both' onChange={this.handleChange} />
                     <br />
                     <input type='submit' value='Apply Filters' />
+                    <button onClick={this.props.fetchSherries}>Reset Filters</button>
                 </fieldset>
             </form>
         )
     }
 }
 
-export default connect(null, { filterSherryResults })(FilterSection);
+export default connect(null, { filterSherryResults, fetchSherries })(FilterSection);

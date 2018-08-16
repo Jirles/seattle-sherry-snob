@@ -12,8 +12,8 @@ class SherryList extends React.Component {
     render(){
         return (
             <div>
-                <h1>Sherry, the civilized drink.</h1>
-                <blockquote><em> - W. Somerset Maugham</em></blockquote>
+                <h1>The Seattle Sherry Snob</h1>
+                
                 <FilterSection />
                 <br />
                 {this.renderSherries()}
