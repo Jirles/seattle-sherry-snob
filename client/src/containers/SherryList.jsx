@@ -20,7 +20,15 @@ class SherryList extends React.Component {
 
     filteredList = () => {
         if (this.state.filters){
-            
+            const filteredByPrice = this.props.sherries.filter(sherry => this.state.minPrice <= sherry.price && this.state.maxPrice >= sherry.price);
+            const filteredByPriceAndSweetness = filteredByPrice.filter(sherry => {
+                if (this.state.sweetnessFilter === 'Both'){
+                    return true;
+                } else {
+                    return sherry.sugar_content.includes(this.state.sweetnessFilter);
+                }
+            });
+            return { sherries: filteredByPriceAndSweetness };
         } else {
             return this.props.sherries
         }
@@ -28,7 +36,7 @@ class SherryList extends React.Component {
 
     handleOnSubmit = (e, filters) => {
         e.preventDefault();
-        debugger
+        console.log(filters);
         const minPrice = filters.minPrice === '' ? 0 : parseFloat(filters.minPrice);
         const maxPrice = filters.maxPrice === '' ? Infinity : parseFloat(filters.maxPrice); 
         this.setState({

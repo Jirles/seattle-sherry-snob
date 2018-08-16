@@ -18,7 +18,7 @@ export default class FilterSection extends React.Component {
 
     render(){
         return(
-            <form onSubmit={this.handleOnSubmit}>
+            <form onSubmit={(e) => this.props.handleOnSubmit(e, this.state)}>
                 <fieldset>
                     <legend>Filter Options</legend>
                     <p>Filter by Price</p>
