@@ -4,9 +4,26 @@ import { connect } from 'react-redux';
 import FilterSection from './FilterSection';
 
 class SherryList extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            filters: false,
+            minPrice: 0,
+            maxPrice: Infinity,
+            sweetnessFilter: 'Both'
+        }
+    }
 
     renderSherries = () => {
         return this.props.sherries.map(sherry => <SherryCard key={sherry.id} sherry={sherry} />)
+    }
+
+    filteredList = () => {
+        if (this.state.filters){
+            
+        } else {
+            return this.props.sherries
+        }
     }
 
     handleOnSubmit = (e, filters) => {
@@ -14,7 +31,8 @@ class SherryList extends React.Component {
         debugger
         const minPrice = filters.minPrice === '' ? 0 : parseFloat(filters.minPrice);
         const maxPrice = filters.maxPrice === '' ? Infinity : parseFloat(filters.maxPrice); 
-        this.props.filterSherryResults({
+        this.setState({
+            filters: true,
             minPrice: minPrice,
             maxPrice: maxPrice,
             sweetnessFilter: filters.sweetnessFilter
