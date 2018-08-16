@@ -1,7 +1,7 @@
 import React from 'react';
 import {SherryCard} from '../components/SherryCard';
 import { connect } from 'react-redux';
-import FilterSection from './FilterSection';
+import {FilterSection} from '../components/FilterSection';
 
 class SherryList extends React.Component {
     constructor(props){
