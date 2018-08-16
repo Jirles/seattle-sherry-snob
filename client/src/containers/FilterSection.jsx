@@ -8,13 +8,19 @@ class FilterSection extends React.Component {
         this.state = {
             minPrice: '',
             maxPrice: '',
-            sweetnessFilter: 'both'
+            sweetnessFilter: 'Both'
         }
     }
 
     handleOnSubmit = (e) => {
         e.preventDefault();
-        this.props.filterSherryResults(this.state);
+        const minPrice = this.state.minPrice === '' ? 0 : parseFloat(this.state.minPrice);
+        const maxPrice = this.state.maxPrice === '' ? Infinity : parseFloat(this.state.maxPrice); 
+        this.props.filterSherryResults({
+            minPrice: minPrice,
+            maxPrice: maxPrice,
+            sweetnessFilter: this.state.sweetnessFilter
+        });
     }
 
     handleChange = (e) => {
@@ -33,11 +39,11 @@ class FilterSection extends React.Component {
                     Max Price: <input type='number' min='0' step='0.01' name='maxPrice' onChange={this.handleChange} />
                     <p>Filter by Sweetness</p>
                     <label htmlFor='sweet'>Sweet:</label>
-                    <input type='radio' name='sweetnessFilter' id='sweet' value='sweet' onChange={this.handleChange} />
+                    <input type='radio' name='sweetnessFilter' id='sweet' value='Sweet' onChange={this.handleChange} />
                     <label htmlFor='dry'> Dry:</label>
-                    <input type='radio' name='sweetnessFilter' id='dry' value='dry' onChange={this.handleChange} />
+                    <input type='radio' name='sweetnessFilter' id='dry' value='Dry' onChange={this.handleChange} />
                     <label htmlFor='both'> Both:</label>
-                    <input type='radio' name='sweetnessFilter' id='both' value='both' onChange={this.handleChange} />
+                    <input type='radio' name='sweetnessFilter' id='both' value='Both' onChange={this.handleChange} />
                     <br />
                     <input type='submit' value='Apply Filters' />
                 </fieldset>

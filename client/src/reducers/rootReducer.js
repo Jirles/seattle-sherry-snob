@@ -5,12 +5,13 @@ export function rootReducer(state = {sherries: []}, action){
         case 'FETCH_SHERRIES':
             return { sherries: action.sherries }
         case 'FILTER_SHERRY_RESULTS':
-            const filteredByPrice = state.sherries.filter(sherry => action.minPrice <= sherry.price && action.maxPrice >= sherry.price);
+            console.log('action: ', action);
+            const filteredByPrice = state.sherries.filter(sherry => action.filters.minPrice <= sherry.price && action.filters.maxPrice >= sherry.price);
             const filteredByPriceAndSweetness = filteredByPrice.filter(sherry => {
-                if (action.sweetnessFilter === 'Both'){
+                if (action.filters.sweetnessFilter === 'Both'){
                     return true;
                 } else {
-                    return sherry.sugar_content.includes(action.sweetnessFilter);
+                    return sherry.sugar_content.includes(action.filters.sweetnessFilter);
                 }
             });
             return { sherries: filteredByPriceAndSweetness };
