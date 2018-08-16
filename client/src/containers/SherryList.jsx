@@ -34,19 +34,13 @@ class SherryList extends React.Component {
     }
 
     handleChange = (e) => {
+        let value = e.target.value;
+        let targetName = e.target.name
+        if(value === ''){
+            targetName.includes('min') ? value = 0 : value = Infinity
+        }
         this.setState({
-            [e.target.name]: e.target.value
-        });
-    }
-
-    handleOnSubmit = (e) => {
-        e.preventDefault();
-        const minPrice = this.state.minPrice === '' ? 0 : parseFloat(this.state.minPrice);
-        const maxPrice = this.state.maxPrice === '' ? Infinity : parseFloat(this.state.maxPrice);
-        console.log({minPrice, maxPrice, sweetnessFilter: this.state.sweetnessFilter});
-        this.setState({
-            minPrice: minPrice,
-            maxPrice: maxPrice
+            [targetName]: value
         });
     }
 
@@ -55,7 +49,7 @@ class SherryList extends React.Component {
             <div>
                 <h1>Seattle Sherry Snob</h1>
                 
-                <FilterSection handleOnSubmit={this.handleOnSubmit} handleChange={this.handleChange} />
+                <FilterSection handleChange={this.handleChange} />
                 <br />
                 {this.renderSherries(this.filteredList())}
             </div>

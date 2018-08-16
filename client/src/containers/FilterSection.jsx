@@ -4,7 +4,7 @@ export default class FilterSection extends React.Component {
 
     render(){
         return(
-            <form onSubmit={this.props.handleOnSubmit}>
+            <form>
                 <fieldset>
                     <legend>Filter Options</legend>
                     <p>Filter by Price</p>
@@ -17,8 +17,7 @@ export default class FilterSection extends React.Component {
                     <input type='radio' name='sweetnessFilter' id='dry' value='Dry' onChange={this.props.handleChange} />
                     <label htmlFor='both'> Both:</label>
                     <input type='radio' name='sweetnessFilter' id='both' value='Both' onChange={this.props.handleChange} />
-                    <br />
-                    <input type='submit' value='Apply Filters' /> 
+                    
                 </fieldset>
             </form>
         )
