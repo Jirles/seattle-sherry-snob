@@ -9,7 +9,7 @@ export const Sherry101 = () => {
             <p>
                 Sherry is a fortified wine, crafted in the area around Jerez de la Frontera -- often seen shortened to Jerez -- in the southern autonomous region of Spain known as Andalusia. Contrary to popular belief, sherry is more than a sweet desert wine meant for post-dinner consumption. Much like its country of origin, sherry is multi-faceted, ranging from crisp, dry fino to dark, sweet Pedro Ximénez.
                 <figure>
-                    <img alt='Photo depicting different styles of sherry' />
+                    <img alt='Photo depicting different styles of sherry' src='http://localhost:3001/api/sherry-types-image' />
                     <figcaption>Sherries range from dry, bright Fino to decedently sweet, viscous Pedro Ximénez</figcaption>
                 </figure>
                 
@@ -32,7 +32,7 @@ export const Sherry101 = () => {
 
                 Sherry  is primarily made from the Palomino grape, account for 95% of all sherry production. These relatively unknown grapes thrive in the humid climate and unique white, chalky soils of the region known as <em>albariza</em>. While they are not necessarily well-suited to making traditional wine, the Palomino is perfect for sherry which is fortified with spirits post-fermentation.
                 <figure>
-                    <img alt='Palomino grapes on the vine' />
+                    <img alt='Palomino grapes on the vine' src='http://localhost:3001/api/palomino-grapes-image'/>
                     <figcaption>The Palomino grape thrive in the white, chalky soils of the Jerez region</figcaption>
                 </figure>
 
@@ -50,7 +50,7 @@ export const Sherry101 = () => {
                         <em>Flor Aging: </em> Flor is the thin layer of indigenous yeast cells that forms on top of sherry wine as it starts to age. Flor protects the wine from air contact and can only grow naturally in the climate of southern Spain. This style of aging produces the “Fino” and “Manzanilla” styles of sherry.
                     </li>
                     <figure>
-                        <img alt='Sherry with a thin layer of flor' />
+                        <img alt='Sherry with a thin layer of flor' src='http://localhost:3001/api/flor-image' />
                         <figcaption>Flor is an ivory colored, wrinkled, waxy foam that can be up to two centimeters thick.</figcaption>
                     </figure>
                     <li>

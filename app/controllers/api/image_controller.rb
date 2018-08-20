@@ -5,7 +5,7 @@ class Api::ImageController < ApplicationController
     end
 
     def sherry_types
-        send_file 'public/images/sherry_types.jpg', type: 'image/png', disposition: 'inline'
+        send_file 'public/images/sherry_types.png', type: 'image/png', disposition: 'inline'
     end 
 
     def palomino_grapes
@@ -13,7 +13,7 @@ class Api::ImageController < ApplicationController
     end 
 
     def flor
-        send_file 'public/images/flor.jpg', type: 'image/png', disposition: 'inline'
+        send_file 'public/images/flor.png', type: 'image/png', disposition: 'inline'
     end 
 
 end 
