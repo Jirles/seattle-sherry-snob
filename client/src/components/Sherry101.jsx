@@ -8,14 +8,13 @@ export const Sherry101 = () => {
 
             <p>
                 Sherry is a fortified wine, crafted in the area around Jerez de la Frontera -- often seen shortened to Jerez -- in the southern autonomous region of Spain known as Andalusia. Contrary to popular belief, sherry is more than a sweet desert wine meant for post-dinner consumption. Much like its country of origin, sherry is multi-faceted, ranging from crisp, dry fino to dark, sweet Pedro Ximénez.
-                <figure>
-                    <img alt='Photo depicting different styles of sherry' src='http://localhost:3001/api/sherry-types-image' />
-                    <figcaption>Sherries range from dry, bright Fino to decedently sweet, viscous Pedro Ximénez</figcaption>
-                </figure>
-                
             </p>
+            <figure>
+                    <img alt='Different styles of sherry' src='http://localhost:3001/api/sherry-types-image' width='650' height='363' />
+                    <figcaption>Sherries range from dry, bright Fino to decedently sweet, viscous Pedro Ximénez. Credit: <a href='https://catavino.net/top-five-mistakes-in-serving-sherry/' target='_blank' rel="noopener noreferrer" >CataVino</a></figcaption>
+                </figure>
+            <h3>Creating a bottle of sherry</h3>
             <p>
-                <h3>Creating a bottle of sherry</h3>
                 So how does one go about making a bottle of sherry? Sherry wine is reputed to be over 3,000 years old. Indeed, the first mention of sherry wine is made by a Greek geographer Strabo in the 1st century B.C. From the region of Jerez, as it is known today, traders shipped sherry throughout the Mediterranean basin, particularly Rome.
 
                 For over 3,000 years different historical circumstances have moulded the identity of these wines. But what are the characteristics of sherry wines as we know them today? 
@@ -31,34 +30,37 @@ export const Sherry101 = () => {
                 Sherry is made from the Palomino, Pedro Ximénez, and Moscatel de Alejandria (Muscat of Alexandria) grape varieties. Most commonly, the Palomino grape is used, but Pedro Ximénez and Moscatel grapes are used in the creation of their respective sweet, eponymous sherry varieties.
 
                 Sherry  is primarily made from the Palomino grape, account for 95% of all sherry production. These relatively unknown grapes thrive in the humid climate and unique white, chalky soils of the region known as <em>albariza</em>. While they are not necessarily well-suited to making traditional wine, the Palomino is perfect for sherry which is fortified with spirits post-fermentation.
-                <figure>
-                    <img alt='Palomino grapes on the vine' src='http://localhost:3001/api/palomino-grapes-image'/>
-                    <figcaption>The Palomino grape thrive in the white, chalky soils of the Jerez region</figcaption>
-                </figure>
-
+            </p>
+            <figure>
+                <img alt='Palomino grapes on the vine' src='http://localhost:3001/api/palomino-grapes-image' width='400' height='300'/>
+                <figcaption>The Palomino grape thrive in the white, chalky soils of the Jerez region. Credit: <a href='https://www.flickr.com/photos/jypsygen/' target='_blank' rel="noopener noreferrer" >jypsygen</a></figcaption>
+            </figure>
+            <p>
                 On the other hand, Pedro Ximénez and Moscatel de Alejandria (Muscat of Alexandria) grapes only produce a small portion of overall sherry production, and undergo a special process called <em>pasificación</em> before fermentation. In this process, after the grapes are harvested they are laid out on grass matts to dry in the sun, effectively turning the grapes into raisins. Additionally, unlike its dryer, Palomino-derived cousins, brandy is added to Pedro Ximenez and Moscatel de Alejandria sherry varieties during fermentation in order to produce a sweeter sherry.
             </p>
-            <p>
-                <strong>Aging Process</strong><br/>
-                In general, sherry is aged a minimum of two years in wooden barrels arranged in a solera system. The youngest barrels are placed at the top of the solera with the oldest barrels at the bottom. When it comes time for bottling, sherry is taken from the bottom-most barrels, but they are never fully emptied. The casks are then filled in a cascading style so that middle casks are filled by the topmost casks and the topmost casts are filled with the most recent harvest. 
-                
-                The solera system ensures the bottom barrel will contain the oldest and most complex wine. Soleras vary in how many rows they contain as well as how old the oldest wine is, and typically the older the solera, or the more barrel rows they contain, the more complex the final wine.
+            <section>
+                <p>
+                    <strong>Aging Process</strong><br/>
+                    In general, sherry is aged a minimum of two years in wooden barrels arranged in a solera system. The youngest barrels are placed at the top of the solera with the oldest barrels at the bottom. When it comes time for bottling, sherry is taken from the bottom-most barrels, but they are never fully emptied. The casks are then filled in a cascading style so that middle casks are filled by the topmost casks and the topmost casts are filled with the most recent harvest. 
+                    
+                    The solera system ensures the bottom barrel will contain the oldest and most complex wine. Soleras vary in how many rows they contain as well as how old the oldest wine is, and typically the older the solera, or the more barrel rows they contain, the more complex the final wine.
 
-                Additionally, there are two main styles for aging sherry: 
+                    Additionally, there are two main styles for aging sherry: 
+                </p>
                 <ol>
                     <li>
                         <em>Flor Aging: </em> Flor is the thin layer of indigenous yeast cells that forms on top of sherry wine as it starts to age. Flor protects the wine from air contact and can only grow naturally in the climate of southern Spain. This style of aging produces the “Fino” and “Manzanilla” styles of sherry.
                     </li>
                     <figure>
-                        <img alt='Sherry with a thin layer of flor' src='http://localhost:3001/api/flor-image' />
-                        <figcaption>Flor is an ivory colored, wrinkled, waxy foam that can be up to two centimeters thick.</figcaption>
+                        <img alt='Sherry with a thin layer of flor' src='http://localhost:3001/api/flor-image' width='400' height='300' />
+                        <figcaption>Flor is an ivory colored, wrinkled, waxy foam that can be up to two centimeters thick. Credit: <a href='https://www.sherry.wine/sherry-wine/production/vinification' target='_blank' rel="noopener noreferrer" >Sherry.org</a></figcaption>
                     </figure>
                     <li>
                         <em>Non-Flor Aging: </em> Allowing sherry to age sans flor allows the wine to oxidize, taking on a nuttier and richer character. The wines produced without flor are typically fortified from 15% to around 17-20% alcohol. This style of aging is used in the “Amontillado” and “Oloroso” styles of sherry.
                     </li>
                 </ol> 
-            </p>
-            <p>
+            </section>
+            <section>
                 <h4>Types of Sherry</h4>
 
                 <table>
@@ -220,15 +222,15 @@ export const Sherry101 = () => {
                         </tr>
                     </tbody>
                 </table>
-            </p>
-            <p>
+            </section>
+            <section>
                 <h4>Additional Resources</h4>
                 <ul>
-                    <li><a href='https://www.sherry.wine/' target='_blank' >Sherry.org</a></li>
-                    <li><a href='https://www.winemag.com/gallery/everything-you-need-to-know-about-sherry/' target='_blank'>Everything You Need to Know About Sherry</a>, by Michael Schachner, <em>Wine Enthusiast</em></li>
-                    <li><a href='http://blog.wine.com/2015/07/somme-things-i-think-about-which-sherry-is-right-for-you/' target='_blank'>Somme Things to Think About: Which Sherry is Right for You?</a>, by Chris Parks, <em>Wine.com Blog</em></li>
+                    <li><a href='https://www.sherry.wine/' target='_blank' rel="noopener noreferrer" >Sherry.org</a></li>
+                    <li><a href='https://www.winemag.com/gallery/everything-you-need-to-know-about-sherry/' target='_blank' rel="noopener noreferrer" >Everything You Need to Know About Sherry</a>, by Michael Schachner, <em>Wine Enthusiast</em></li>
+                    <li><a href='http://blog.wine.com/2015/07/somme-things-i-think-about-which-sherry-is-right-for-you/' target='_blank' rel="noopener noreferrer" >Somme Things to Think About: Which Sherry is Right for You?</a>, by Chris Parks, <em>Wine.com Blog</em></li>
                 </ul>
-            </p>
+            </section>
         </div>
     )
 }
