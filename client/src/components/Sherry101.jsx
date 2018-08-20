@@ -25,14 +25,14 @@ export const Sherry101 = () => {
                 By adding the spirits in a different times in the fermentation process, winemakers could control the sugar content in their products. Adding the spirits pre-fermentation, as in Pedro Ximenez sherry for example, would result in a sweeter wine as the sugar in the spirit would be converted during the fermentation process. For the majority of sherry, un-aged brandy is added post-fermentation, resulting in a dryer vintage.
             </p>
             <p>
-                <strong>The Grapes: Palomino, Pedro Ximenez, and Moscatel de Alejandria </strong>
-                Sherry is made from the Palomino, Pedro Ximenez, and Moscatel de Alejandria (Muscat of Alexandria) grape varieties. Most commonly, the Palomino grape is used, but Pedro Ximenez and Moscatel grapes are used in the creation of their respective sweet, eponymous sherry varieties.
+                <strong>The Grapes: Palomino, Pedro Ximénez, and Moscatel de Alejandria </strong>
+                Sherry is made from the Palomino, Pedro Ximénez, and Moscatel de Alejandria (Muscat of Alexandria) grape varieties. Most commonly, the Palomino grape is used, but Pedro Ximénez and Moscatel grapes are used in the creation of their respective sweet, eponymous sherry varieties.
 
                 Sherry  is primarily made from the Palomino grape, account for 95% of all sherry production. These relatively unknown grapes thrive in the humid climate and unique white, chalky soils of the region known as <em>albariza</em>. While they are not necessarily well-suited to making traditional wine, the Palomino is perfect for sherry which is fortified with spirits post-fermentation.
 
                 <img alt='Palomino grapes on the vine' />
 
-                On the other hand, Pedro Ximenez and Moscatel de Alejandria (Muscat of Alexandria) grapes only produce a small portion of overall sherry production, and undergo a special process called <em>pasificación</em> before fermentation. In this process, after the grapes are harvested they are laid out on grass matts to dry in the sun, effectively turning the grapes into raisins. Additionally, unlike its dryer, Palomino-derived cousins, brandy is added to Pedro Ximenez and Moscatel de Alejandria sherry varieties during fermentation in order to produce a sweeter sherry.
+                On the other hand, Pedro Ximénez and Moscatel de Alejandria (Muscat of Alexandria) grapes only produce a small portion of overall sherry production, and undergo a special process called <em>pasificación</em> before fermentation. In this process, after the grapes are harvested they are laid out on grass matts to dry in the sun, effectively turning the grapes into raisins. Additionally, unlike its dryer, Palomino-derived cousins, brandy is added to Pedro Ximenez and Moscatel de Alejandria sherry varieties during fermentation in order to produce a sweeter sherry.
             </p>
             <p>
                 <strong>Aging Process</strong>
@@ -55,7 +55,165 @@ export const Sherry101 = () => {
             <p>
                 <h4>Types of Sherry</h4>
 
-                Maybe a table to look at the different types of sherry
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Sherry Type
+                            </th>
+                            <th>
+                                Description
+                            </th>
+                            <th>
+                                Sugar Content
+                            </th>
+                            <th>
+                                Ideal Serving Temperature
+                            </th>
+                            <th>
+                                Pairings
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Fino
+                            </td>
+                            <td>
+                                Driest, most saline-style of sherry, made from Palomino grapes and aged through the flor process
+                            </td>
+                            <td>
+                                Very Dry
+                            </td>
+                            <td>
+                                7-9 °C / 44-48 °F
+                            </td>
+                            <td>
+                                Salty snacks like peanuts, potato chips, cured olives and fried seafood
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Manzanilla
+                            </td>
+                            <td>
+                                In essence, fino made in the coastal town of Sanlúcar de Barrameda. Manzanilla is the lighest of the sherry varieties
+                            </td>
+                            <td>
+                                Dry
+                            </td>
+                            <td>
+                                7-9 °C / 44-48 °F
+                            </td>
+                            <td>
+                                Raw seafood
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Amontillado
+                            </td>
+                            <td>
+                                The result when a flor blanket fails, Amontillado is a brown sherry whose nutty taste brings to mind sautéed mushrooms and a richness best described as umami.
+                            </td>
+                            <td>
+                                Dry
+                            </td>
+                            <td>
+                                13 °C / 55 °F
+                            </td>
+                            <td>
+                                Medium-bodied soups or flavorfully sauced pork, pheasant or rabbit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Oloroso
+                            </td>
+                            <td>
+                                Unlike Amontillado, oloroso sees the cellar master intentionally destroy the flor to promote oxidation. Olorosos can be sweet or dry in style, depending on whether the wine includes Moscatel (sweet), or is made strictly from Palomino grapes (dry).
+                            </td>
+                            <td>
+                                Sweet/Dry
+                            </td>
+                            <td>
+                                13 °C / 55 °F
+                            </td>
+                            <td>
+                                Best reserved for the conclusion of a meal, paired with aged, hard cheese
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Palo Cortado
+                            </td>
+                            <td>
+                                The wildcard of Sherry, palo cortado begins its existence under flor, and then loses that cover while tracking toward amontillado. Along the way, however, something mysterious happens, and the wine grows richer and more regal, like oloroso. The name, palo cortado, is derived from a cross traditionally drawn in white chalk on the barrel’s exterior to note that it’s doing its own thing and isn’t amontillado or oloroso. 
+                            </td>
+                            <td>
+                                Dry
+                            </td>
+                            <td>
+                                13 °C / 55 °F
+                            </td>
+                            <td>
+                                Traditional pairings are charcuterie, especially Iberico ham.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Cream Sherry
+                            </td>
+                            <td>
+                                Typically begins as a dry oloroso sherry base where sweet grape juice is added to make a lighter dessert style, sweet daily sipper, or after-dinner drink with coffee. 
+                            </td>
+                            <td>
+                                Sweet
+                            </td>
+                            <td>
+                                12 °C / 53 °F
+                            </td>
+                            <td>
+                                Sip after dinner, perhaps with coffee.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Pedro Ximénez
+                            </td>
+                            <td>
+                                An intensely sweet, dark dessert sherry with flavors and aromas of raisins and molasses.
+                            </td>
+                            <td>
+                                Sweet
+                            </td>
+                            <td>
+                                13-14 °C / 55-57 °F
+                            </td>
+                            <td>
+                                Pair with deserts for a decadent end to a meal.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Moscatel
+                            </td>
+                            <td>
+                                A sweet desert sherry, Moscatel is treated the same as Pedro Ximénez, except it is more foral.
+                            </td>
+                            <td>
+                                Sweet
+                            </td>
+                            <td>
+                                13-14 °C / 55-57 °F
+                            </td>
+                            <td>
+                                Pair with deserts for a decadent end to a meal.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </p>
             <p>
                 <h4>Additional Resources</h4>
