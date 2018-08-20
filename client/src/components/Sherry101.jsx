@@ -22,7 +22,7 @@ export const Sherry101 = () => {
 
                 Sherry  is primarily made from the Palomino grape, account for 95% of all sherry production. These relatively unknown grapes thrive in the humid climate and unique white, chalky soils of the region known as <em>albariza</em>. While they are not necessarily well-suited to making traditional wine, the Palomino is perfect for sherry which is fortified with spirits post-fermentation.
 
-                On the other hand, Pedro Ximenez and Moscatel de Alejandria (Muscat of Alexandria) grapes only produce a small portion of overall sherry production, and undergo a special process called <em>pasificación</em> before fermentation.
+                On the other hand, Pedro Ximenez and Moscatel de Alejandria (Muscat of Alexandria) grapes only produce a small portion of overall sherry production, and undergo a special process called <em>pasificación</em> before fermentation. In this process, after the grapes are harvested they are laid out on grass matts to dry in the sun, effectively turning the grapes into raisins. Additionally, unlike its dryer, Palomino-derived cousins, brandy is added to Pedro Ximenez and Moscatel de Alejandria sherry varieties during fermentation in order to produce a sweeter sherry.
             </p>
             <p>
                 <strong>Foritification</strong>
