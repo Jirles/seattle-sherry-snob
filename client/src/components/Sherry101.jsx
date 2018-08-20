@@ -7,7 +7,7 @@ export const Sherry101 = () => {
             <blockquote><em>If God had not made Sherry, how imperfect his work would have been. <small> - Benito Perez Galdos</small></em></blockquote>
 
             <p>
-                Sherry is a fortified wine, crafted in the area around Jerez de la Frontera -- often seen shortened to Jerez -- in the southern autonomous region of Spain known as Andalusia. Contrary to popular belief, sherry is more than a sweet desert wine meant for post-dinner consumption. Much like its country of origin, sherry is multi-faceted, coming in seven varieties ranging from crisp, dry fino to dark, sweet Pedro Ximénez.
+                Sherry is a fortified wine, crafted in the area around Jerez de la Frontera -- often seen shortened to Jerez -- in the southern autonomous region of Spain known as Andalusia. Contrary to popular belief, sherry is more than a sweet desert wine meant for post-dinner consumption. Much like its country of origin, sherry is multi-faceted, ranging from crisp, dry fino to dark, sweet Pedro Ximénez.
                 <figure>
                     <img alt='Photo depicting different styles of sherry' />
                     <figcaption>Sherries range from dry, bright Fino to decedently sweet, viscous Pedro Ximénez</figcaption>
