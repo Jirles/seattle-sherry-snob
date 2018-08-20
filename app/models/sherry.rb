@@ -16,7 +16,7 @@ class Sherry < ActiveRecord::Base
                     s.price = s.convert_price(result[:price_in_cents])
                     s.origin = result[:origin]
                     s.package = result[:package] 
-                    s.sugar_content = result[:sugar_content] 
+                    s.sugar_content = !result[:sugar_content].nil? ? result[:sugar_content] : "N/A"
                     s.producer = result[:producer_name]
                     s.tasting_note = result[:tasting_note]
                     s.image_url = !result[:image_url].nil? ? result[:image_url] : DEFAULT_IMAGE
