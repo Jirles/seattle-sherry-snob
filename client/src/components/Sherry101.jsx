@@ -13,16 +13,25 @@ export const Sherry101 = () => {
                 
             </p>
             <p>
-                <h4>Creating a bottle of sherry</h4>
+                <h3>Creating a bottle of sherry</h3>
+                So how does one go about making a bottle of sherry? The process has  
+            </p>
+            <p>
+            </p>
+            <p>
+                <strong>Foritification</strong>
+                What does it mean to call sherry a 'fortified wine'? Fortified wines came about in a time before refrigeration. Shipping wine oversease in wine casks was problematic, as the casks were not air-tight, often resulting in oxidized wine -- read vinegar. Winemakers soon learned to add spirits to their wine to reduce spoilage on long shipments. By adding the spirits in a different times in the fermentation process, winemakers could control the sugar content in their products. Adding the spirits pre-fermentation, as in port wines for example, would result in a sweeter wine as the sugar in the spirit would be converted during the fermentation process. 
                 
-                What makes sherry special? First...
-                
-                Sherries are aged in a unique system called the solera, where barrels of fortified wines sit for years at ambient temperatures in a stacked formation. The . Portions of the wine are periodically removed from the oldest barrels for bottling, with new stocks added to keep the solera going.
+                Regarding sherry, brandy is always added post-fermentation resulting in a dryer vinteage.
             </p>
             <p>
                 <h4>Types of Sherry</h4>
 
                 Maybe a table to look at the different types of sherry
+            </p>
+            <p>
+                <h4>Additional Resources</h4>
+
             </p>
         </div>
     )
