@@ -6,6 +6,7 @@ export const NavBar = (props) => {
         <ul>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/about'>About Us</Link></li>
+            <li><Link to='/sherry-101'>Sherry 101</Link></li>
         </ul>
     )
 }

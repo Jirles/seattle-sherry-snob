@@ -222,7 +222,6 @@ export const Sherry101 = () => {
                     <li><a href='https://www.winemag.com/gallery/everything-you-need-to-know-about-sherry/'>Everything You Need to Know About Sherry</a>, By: Michael Schachner, <em>Wine Enthusiast</em></li>
                     <li><a href='http://blog.wine.com/2015/07/somme-things-i-think-about-which-sherry-is-right-for-you/'>Somme Things to Think About: Which Sherry is Right for You?</a>, by Chris Parks, <em>Wine.com Blog</em></li>
                 </ul>
-
             </p>
         </div>
     )
