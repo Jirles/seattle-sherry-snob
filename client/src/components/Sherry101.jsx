@@ -26,7 +26,9 @@ export const Sherry101 = () => {
             </p>
             <p>
                 <strong>Foritification</strong>
-                What does it mean to call sherry a 'fortified wine'? Fortified wines came about in a time before refrigeration. Shipping wine oversease in wine casks was problematic, as the casks were not air-tight, often resulting in oxidized wine -- read vinegar. Winemakers soon learned to add spirits to their wine to reduce spoilage on long shipments. By adding the spirits in a different times in the fermentation process, winemakers could control the sugar content in their products. Adding the spirits pre-fermentation, as in Pedro Ximenez sherry for example, would result in a sweeter wine as the sugar in the spirit would be converted during the fermentation process. For the majority of sherry, un-aged brandy is always added post-fermentation, resulting in a dryer vintage.
+                Fortification was touched in previous section, but what exactly is a fortified wine and why even fortify wine in the first place? Fortified wines came about in a time before refrigeration. Shipping wine oversease in wine casks was problematic, as the casks were not air-tight, often resulting in oxidized wine, i.e. vinegar. Winemakers soon learned to add spirits to their wine to reduce spoilage on long shipments. 
+                
+                By adding the spirits in a different times in the fermentation process, winemakers could control the sugar content in their products. Adding the spirits pre-fermentation, as in Pedro Ximenez sherry for example, would result in a sweeter wine as the sugar in the spirit would be converted during the fermentation process. For the majority of sherry, un-aged brandy is always added post-fermentation, resulting in a dryer vintage.
             </p>
             <p>
                 <h4>Types of Sherry</h4>
