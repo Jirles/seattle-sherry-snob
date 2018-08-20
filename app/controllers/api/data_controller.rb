@@ -1,5 +1,4 @@
 class Api::DataController < ApplicationController
-    require 'byebug'
 
     def index 
         @sherries ||= Sherry.all

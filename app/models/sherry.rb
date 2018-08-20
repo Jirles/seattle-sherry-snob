@@ -8,19 +8,19 @@ class Sherry < ActiveRecord::Base
     end 
 
     def self.create_or_find_from_json(json)
-        json.result.each do |result|
-            unless Sherry.find_by(lcbo_id: result.id)
+        json[:result].each do |result|
+            unless Sherry.find_by(lcbo_id: result[:id])
                 sherry = self.new do |s|
-                    s.lcbo_id = result.id
-                    s.name = result.name
-                    s.price = convert_price(result.price_in_cents)
-                    s.origin = result.origin
-                    s.package = result.package 
-                    s.sugar_content = result.sugar_content 
-                    s.producer = result.producer_name
-                    s.tasting_note = result.tasting_note
-                    s.image_url = !result.image_url.nil? ? result.image_url : DEFAULT_IMAGE
-                    s.thumbnail_url = !result.image_thumb_url.nil? ? result.image_thumb_url : DEFAULT_IMAGE
+                    s.lcbo_id = result[:id]
+                    s.name = result[:name]
+                    s.price = s.convert_price(result[:price_in_cents])
+                    s.origin = result[:origin]
+                    s.package = result[:package] 
+                    s.sugar_content = result[:sugar_content] 
+                    s.producer = result[:producer_name]
+                    s.tasting_note = result[:tasting_note]
+                    s.image_url = !result[:image_url].nil? ? result[:image_url] : DEFAULT_IMAGE
+                    s.thumbnail_url = !result[:image_thumb_url].nil? ? result[:image_thumb_url] : DEFAULT_IMAGE
                 end 
                 sherry.save
             end 
