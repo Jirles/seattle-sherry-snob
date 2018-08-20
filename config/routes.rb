@@ -3,8 +3,11 @@ Rails.application.routes.draw do
   namespace :api do 
     get '/sherries' => 'data#index'
     get '/sherries/:id' => 'data#show'
-    get '/default-image' => 'data#default_image'
     post '/sherries' => 'data#create_sherries'
     post '/comments' => 'data#create_comment'
+    get '/default-image' => 'image#default_image'
+    get '/sherry-types-image' => 'image#sherry_types'
+    get '/palomino-grapes-image' => 'image#palomino_grapes'
+    get '/flor-image' => 'image#flor'
   end 
 end

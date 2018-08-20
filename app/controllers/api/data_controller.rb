@@ -8,10 +8,6 @@ class Api::DataController < ApplicationController
     def show
         @sherry ||= Sherry.find(params[:id])
         render json: @sherry, status: 200
-    end 
-
-    def default_image
-        send_file 'public/images/default-image.jpg', type: 'image/png', disposition: 'inline'
     end
 
     def create_sherries
