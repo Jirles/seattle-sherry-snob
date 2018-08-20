@@ -30,13 +30,27 @@ export const Sherry101 = () => {
 
                 Sherry  is primarily made from the Palomino grape, account for 95% of all sherry production. These relatively unknown grapes thrive in the humid climate and unique white, chalky soils of the region known as <em>albariza</em>. While they are not necessarily well-suited to making traditional wine, the Palomino is perfect for sherry which is fortified with spirits post-fermentation.
 
+                <img alt='Palomino grapes on the vine' />
+
                 On the other hand, Pedro Ximenez and Moscatel de Alejandria (Muscat of Alexandria) grapes only produce a small portion of overall sherry production, and undergo a special process called <em>pasificación</em> before fermentation. In this process, after the grapes are harvested they are laid out on grass matts to dry in the sun, effectively turning the grapes into raisins. Additionally, unlike its dryer, Palomino-derived cousins, brandy is added to Pedro Ximenez and Moscatel de Alejandria sherry varieties during fermentation in order to produce a sweeter sherry.
             </p>
             <p>
                 <strong>Aging Process</strong>
-                In general, sherry is aged a minimum of two years in wooden barrels arranged in a solera system. The youngest barrels are placed at the top of the solera with the oldest barrels at the bottom. When it comes time for bottling, sherry is taken from the bottom-most barrels, but they are never fully emptied. The sherry then cascades down the stacks of casks so that the topmost casts are filled with the most recent harvest. 
+                In general, sherry is aged a minimum of two years in wooden barrels arranged in a solera system. The youngest barrels are placed at the top of the solera with the oldest barrels at the bottom. When it comes time for bottling, sherry is taken from the bottom-most barrels, but they are never fully emptied. The casks are then filled in a cascading style so that middle casks are filled by the topmost casks and the topmost casts are filled with the most recent harvest. 
                 
-                The result leaves the bottom barrel with the oldest and most complex wine. Soleras vary in how many rows they contain as well as how old the oldest wine is, and typically the older the solera, or the more barrel rows they contain, the more complex the final wine. 
+                The solera system ensures the bottom barrel will contain the oldest and most complex wine. Soleras vary in how many rows they contain as well as how old the oldest wine is, and typically the older the solera, or the more barrel rows they contain, the more complex the final wine.
+
+                Additionally, there are two main styles for aging sherry: 
+                <ol>
+                    <li>
+                        <em>Flor Aging: </em> Flor is the thin layer of indigenous yeast cells that forms on top of sherry wine as it starts to age. It is an ivory colored, wrinkled, waxy foam that can be up to two centimeters thick. Flor protects the wine from air contact and can only grow naturally in the climate of southern Spain. This style of aging produces the “Fino” and “Manzanilla” styles of sherry.
+
+                        <img alt='Sherry with a thin layer of flor' />
+                    </li>
+                    <li>
+                        <em>Non-Flor Aging: </em> Allowing sherry to age sans flor allows the wine to oxidize, taking on a nuttier and richer character. The wines produced without flor are typically fortified from 15% to around 17-20% alcohol. This style of aging is used in the “Amontillado” and “Oloroso” styles of sherry.
+                    </li>
+                </ol> 
             </p>
             <p>
                 <h4>Types of Sherry</h4>
