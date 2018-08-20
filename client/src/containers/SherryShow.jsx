@@ -8,7 +8,7 @@ class SherryShow extends React.Component {
         return(
             <div>
                 <h3>{sherry.name}</h3>
-                <img src={sherry.thumbnail_url} alt='A sherry bottle' width='420' height='320' />
+                <img src={sherry.thumbnail_url} alt='A sherry bottle' width='320' height='320' />
                     
                 <h4><em>{sherry.tasting_note}</em></h4>
                 <table>
