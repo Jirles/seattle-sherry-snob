@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     get '/sherry-types-image' => 'image#sherry_types'
     get '/palomino-grapes-image' => 'image#palomino_grapes'
     get '/flor-image' => 'image#flor'
+    get '/banner-image' => 'image#banner'
   end 
 end

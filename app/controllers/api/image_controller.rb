@@ -16,4 +16,8 @@ class Api::ImageController < ApplicationController
         send_file 'public/images/flor.png', type: 'image/png', disposition: 'inline'
     end 
 
+    def banner
+        send_file 'public/images/navbar-banner.jpg', type: 'image/png', disposition: 'inline'
+    end 
+
 end 
