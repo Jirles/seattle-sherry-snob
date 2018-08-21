@@ -15,6 +15,12 @@ body {
     font-size: 1.25em;
 }
 
+/* link coloring */
+
+a:link, a:visited {
+    color: #843a4e;
+}
+
 /* background fade */ 
 #color-fade {
     background-image: linear-gradient(to right bottom, #f7e2e8, #f7eaf1, #f8f1f7, #faf8fc, #ffffff);
