@@ -46,9 +46,7 @@ class SherryList extends React.Component {
 
     render(){
         return (
-            <div>
-                <h1>Seattle Sherry Snob</h1>
-                
+            <div className='flex flex-wrap'>
                 <FilterSection handleChange={this.handleChange} />
                 <br />
                 {this.renderSherries(this.filteredList())}

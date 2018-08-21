@@ -3,10 +3,13 @@ import {Link} from 'react-router-dom';
 
 export const SherryCard = (props) => {
     return(
-        <div>
-             <Link to={`sherries/${props.sherry.id}`}><img src={props.sherry.thumbnail_url} alt='A sherry bottle' width='220' height='220' /></Link>
-             <h3>{props.sherry.name} - <small><em>${props.sherry.price}</em></small></h3>
-             <p>{props.sherry.sugar_content}</p>
+        <div className='col-3 mx-auto my2 p0 border rounded' >
+            <Link to={`sherries/${props.sherry.id}`}><img src={props.sherry.thumbnail_url} alt='A sherry bottle' className='fit' /></Link>
+            <h4 className='ml1'>{props.sherry.name}</h4>
+            <ul className='list-reset'>
+                <li className='ml2' ><em>${props.sherry.price}</em></li>
+                <li className='ml2'>{props.sherry.sugar_content}</li>
+            </ul>
          </div>
     )
 }
