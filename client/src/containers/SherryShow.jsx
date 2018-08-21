@@ -8,9 +8,11 @@ class SherryShow extends React.Component {
         return(
             <div className='flex' >
                 <section className='col-6 mx-auto my2'>
-                    <div className='h3'>{sherry.name}</div>
+                    <h2>{sherry.name}</h2>
+                    <div className='col-12' >
                     <img src={sherry.thumbnail_url} alt='A sherry bottle' className='fit inline mb0 shadow' />
-                    <div className='col-5 h4 italic inline-block pb3'>{sherry.tasting_note}</div>
+                    <div className='col-6 h3 italic inline-block p2'>{sherry.tasting_note}</div>
+                    </div>
                     <table className='table'>
                         <tbody>
                             <tr>
