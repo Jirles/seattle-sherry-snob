@@ -1,8 +1,11 @@
 /* navbar hover */
 
+.banner-link {
+    font-size: 1.25em;
+}
+
 .banner-link:hover {
-    background-color: #8e515f;
-    color: white;
+    text-decoration: bold;
 }
 
 /* background fade */ 
