@@ -9,7 +9,7 @@ class SherryShow extends React.Component {
             <div className='flex' >
                 <section className='col-6 mx-auto my2'>
                     <div className='h3'>{sherry.name}</div>
-                    <img src={sherry.thumbnail_url} alt='A sherry bottle' className='fit inline mb0' />
+                    <img src={sherry.thumbnail_url} alt='A sherry bottle' className='fit inline mb0 shadow' />
                     <div className='col-5 h4 italic inline-block pb3'>{sherry.tasting_note}</div>
                     <table className='table'>
                         <tbody>

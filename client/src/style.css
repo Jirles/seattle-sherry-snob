@@ -7,7 +7,7 @@
 
 /* background fade */ 
 #color-fade {
-    background-image: linear-gradient(to bottom, #e4c8cf, #e4d2db, #e5dce4, #e8e5ea, #eeeeee);
+    background-image: linear-gradient(to right bottom, #f7e2e8, #f7eaf1, #f8f1f7, #faf8fc, #ffffff);
 }
     
 /* shadows for cards and figures */

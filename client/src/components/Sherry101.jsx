@@ -6,7 +6,7 @@ export const Sherry101 = () => {
             <div className='h1 bold col-12' >Sherry 101</div>
             <blockquote className='h3 col-12 italic'>If God had not made Sherry, how imperfect his work would have been. <span className='h4 italic'> - Benito Perez Galdos</span></blockquote>
             <figure className='m-auto'>
-                    <img alt='Different styles of sherry' src='http://localhost:3001/api/sherry-types-image' width='80%'/>
+                    <img alt='Different styles of sherry' className='shadow' src='http://localhost:3001/api/sherry-types-image' width='80%'/>
                     <figcaption className='content-right' >Sherries range from dry, bright Fino to decedently sweet, viscous Pedro Ximénez. Credit: <a href='https://catavino.net/top-five-mistakes-in-serving-sherry/' target='_blank' rel="noopener noreferrer" >CataVino</a></figcaption>
             </figure>
 
@@ -36,7 +36,7 @@ export const Sherry101 = () => {
                     </p>
                 </div>
                 <figure className='col-6 inline-block'>
-                    <img alt='Palomino grapes on the vine' src='http://localhost:3001/api/palomino-grapes-image' width='75%'/>
+                    <img alt='Palomino grapes on the vine' className='shadow' src='http://localhost:3001/api/palomino-grapes-image' width='75%'/>
                     <figcaption>Palomino Grapes, Credit: <a href='https://www.flickr.com/photos/jypsygen/' target='_blank' rel="noopener noreferrer" >jypsygen</a></figcaption>
                 </figure>
             </div>
@@ -54,7 +54,7 @@ export const Sherry101 = () => {
                 </p>
                 <div className='col-12 flex'>
                     <figure className='col-6 inline'>
-                            <img alt='Sherry with a thin layer of flor' src='http://localhost:3001/api/flor-image' width='90%' />
+                            <img alt='Sherry with a thin layer of flor' className='shadow' src='http://localhost:3001/api/flor-image' width='90%' />
                             <figcaption className='col-8' >Flor is an ivory colored, wrinkled, waxy foam that can be up to two centimeters thick. Credit: <a href='https://www.sherry.wine/sherry-wine/production/vinification' target='_blank' rel="noopener noreferrer" >Sherry.org</a></figcaption>
                         </figure>
                     <ol className='col-4 inline-block'>

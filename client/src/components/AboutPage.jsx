@@ -5,7 +5,7 @@ export const AboutPage = () => {
         <div className='p2'>
             <h1>About Us</h1>
             <figure className='col-12 py3'>
-                <iframe title='A video from the sitcom Frasier where Niles first suggests they drink sherry.' width="560" height="315" src="https://www.youtube.com/embed/tRlC1iwrBUc" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen className='center'></iframe>
+                <iframe title='A video from the sitcom Frasier where Niles first suggests they drink sherry.' src="https://www.youtube.com/embed/tRlC1iwrBUc" width="560" height="315" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen className='center shadow'></iframe>
             </figure>
             <blockquote className='h3 italic mb2'>Sherry, Niles?</blockquote>
             <div className='flex col-12 mt3'>
@@ -21,7 +21,7 @@ export const AboutPage = () => {
                 </p> 
                 </div>
                 <figure className='col-6'>
-                    <iframe title='Frasier pulls wine from a shelf to see Niles hiding behind them.' src="https://giphy.com/embed/126bkuMUp4KlZS" width="480" height="386" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+                    <iframe title='Frasier pulls wine from a shelf to see Niles hiding behind them.' src="https://giphy.com/embed/126bkuMUp4KlZS" width="480" height="386" frameBorder="0" className="giphy-embed shadow" allowFullScreen></iframe>
                 </figure>
             </div>
         </div>
