@@ -27,8 +27,8 @@ class CommentForm extends React.Component {
     render(){
         return(
             <form onSubmit={this.handleOnSubmit}>
-                <input type='textarea' onChange={this.handleOnChange} value={this.state.content}/>
-                <input type='submit' />
+                <input className='col-8 mr2' type='textarea' onChange={this.handleOnChange} value={this.state.content}/>
+                <input className='btn not-rounded' type='submit' />
             </form>
         )
     }
