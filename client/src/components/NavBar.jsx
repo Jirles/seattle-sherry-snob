@@ -1,13 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-export const NavBar = (props) => {
+export const NavBar = () => {
     return (
-        <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/about'>About Us</Link></li>
-            <li><Link to='/sherry-101'>Sherry 101</Link></li>
-        </ul>
+        <div className='clearfix border' >
+            <div className='inline-block left border' ><Link to='/' className='h3 italic' >Seattle Sherry Snob</Link></div>
+            <div className='inline-block mr1 right border' ><Link to='/about'>About Us</Link></div>
+            <div className='inline-block right border' ><Link to='/sherry-101'>Sherry 101</Link></div>
+        </div>
     )
 }
 

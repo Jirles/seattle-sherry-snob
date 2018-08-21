@@ -1,5 +1,4 @@
 import React from 'react';
-//import SherryList from '../containers/SherryList';
 import {NavBar} from './NavBar';
 import {AboutPage} from './AboutPage';
 import {Sherry101} from './Sherry101';
