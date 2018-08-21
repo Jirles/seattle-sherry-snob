@@ -1,11 +1,8 @@
 /* navbar hover */
 
-.banner-link {
-    font-size: 1.25em;
-}
-
 .banner-link:hover {
     text-decoration: bold;
+    font-size: 1.25em;
 }
 
 /* background fade */ 
