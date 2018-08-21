@@ -5,12 +5,12 @@ export const FilterSection = (props) => {
     return(
 
         <div className='col-12 p1'>
-            <fieldset className='col-4 mx-auto'>
-                <legend>Filter Options</legend>
-                <p>Filter by Price</p>
+            <fieldset className='col-4 mx-auto shadow escape-bg-fade'>
+                <div className='h3 underline' >Filter Options</div>
+                <p className='pl2' >Filter by Price</p>
                 Min Price: <input type='number' min='0' step='0.01' name='minPrice' onChange={props.handleChange} /><br />
                 Max Price: <input type='number' min='0' step='0.01' name='maxPrice' onChange={props.handleChange} />
-                <p>Filter by Sweetness</p>
+                <p className='pl2'>Filter by Sweetness</p>
                 <label htmlFor='sweet'>Sweet:</label>
                 <input type='radio' name='sweetnessFilter' id='sweet' value='Sweet' onChange={props.handleChange} />
                 <label htmlFor='dry'> Dry:</label>
