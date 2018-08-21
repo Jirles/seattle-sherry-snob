@@ -68,162 +68,162 @@ export const Sherry101 = () => {
                 </div>
             </section>
             <section>
-                <h4>Types of Sherry</h4>
+                <div className='h4 bold'>Types of Sherry</div>
 
-                <table>
+                <table className='col-12 m2 p2'>
                     <thead>
                         <tr>
-                            <th>
-                                Sherry Type
+                            <th className='underline'>
+                                Name
                             </th>
-                            <th>
+                            <th className='underline'>
                                 Description
                             </th>
-                            <th>
+                            <th className='underline'>
                                 Sugar Content
                             </th>
-                            <th>
+                            <th className='underline'>
                                 Ideal Serving Temperature
                             </th>
-                            <th>
+                            <th className='underline'>
                                 Pairings
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Fino
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-4'>
                                 Driest, most saline-style of sherry, made from Palomino grapes and aged through the flor process
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Very Dry
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center' >
                                 7-9 °C / 44-48 °F
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2'>
                                 Salty snacks like peanuts, potato chips, cured olives and fried seafood
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Manzanilla
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-4'>
                                 In essence, fino made in the coastal town of Sanlúcar de Barrameda. Manzanilla is the lighest of the sherry varieties
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Dry
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 7-9 °C / 44-48 °F
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2'>
                                 Raw seafood
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Amontillado
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-4'>
                                 The result when a flor blanket fails, Amontillado is a brown sherry whose nutty taste brings to mind sautéed mushrooms and a richness best described as umami.
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Dry
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 13 °C / 55 °F
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2'>
                                 Medium-bodied soups or flavorfully sauced pork, pheasant or rabbit.
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Oloroso
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-4'>
                                 Unlike Amontillado, oloroso sees the cellar master intentionally destroy the flor to promote oxidation. Olorosos can be sweet or dry in style, depending on whether the wine includes Moscatel (sweet), or is made strictly from Palomino grapes (dry).
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Sweet/Dry
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 13 °C / 55 °F
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2'>
                                 Best reserved for the conclusion of a meal, paired with aged, hard cheese
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Palo Cortado
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-4'>
                                 The wildcard of Sherry, palo cortado begins its existence under flor, and then loses that cover while tracking toward amontillado. Along the way, however, something mysterious happens, and the wine grows richer and more regal, like oloroso. The name, palo cortado, is derived from a cross traditionally drawn in white chalk on the barrel’s exterior to note that it’s doing its own thing and isn’t amontillado or oloroso. 
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Dry
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 13 °C / 55 °F
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2'>
                                 Traditional pairings are charcuterie, especially Iberico ham.
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Cream Sherry
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-4'>
                                 Typically begins as a dry oloroso sherry base where sweet grape juice is added to make a lighter dessert style, sweet daily sipper, or after-dinner drink with coffee. 
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Sweet
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 12 °C / 53 °F
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2'>
                                 Sip after dinner, perhaps with coffee.
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Pedro Ximénez
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-4'>
                                 An intensely sweet, dark dessert sherry with flavors and aromas of raisins and molasses.
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Sweet
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 13-14 °C / 55-57 °F
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2'>
                                 Pair with deserts for a decadent end to a meal.
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Moscatel
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-4'>
                                 A sweet desert sherry, Moscatel is treated the same as Pedro Ximénez, except it is more foral.
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 Sweet
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2 center'>
                                 13-14 °C / 55-57 °F
                             </td>
-                            <td>
+                            <td className='border-bottom mx-auto col-2'>
                                 Pair with deserts for a decadent end to a meal.
                             </td>
                         </tr>
@@ -231,7 +231,7 @@ export const Sherry101 = () => {
                 </table>
             </section>
             <section>
-                <h4>Additional Resources</h4>
+                <div className='h4 bold'>Sources</div>
                 <ul className='list-reset' >
                     <li><a href='https://www.sherry.wine/' target='_blank' rel="noopener noreferrer" className='text-decoration-none ml3' >Sherry.org</a></li>
                     <li><a href='https://www.winemag.com/gallery/everything-you-need-to-know-about-sherry/' target='_blank' rel="noopener noreferrer" className='text-decoration-none ml3'>Everything You Need to Know About Sherry</a>, by Michael Schachner, <em>Wine Enthusiast</em></li>
