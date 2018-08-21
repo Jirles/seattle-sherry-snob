@@ -1,3 +1,13 @@
+/* fonts */
+#title {
+    font-family: 'Great Vibes', cursive;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25em;
+}
+
 /* navbar hover */
 
 .banner-link:hover {
