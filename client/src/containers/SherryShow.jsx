@@ -48,7 +48,7 @@ class SherryShow extends React.Component {
                         </tbody>
                     </table>
                 </section>
-                <section className='ml2 col-4 overflow-scroll my2'>
+                <section className='ml2 col-4 overflow-scroll m2 p2 border-left'>
                 <CommentSection comments={sherry.comments} sherry_id={sherry.id}/>
                 </section>
             </div>
